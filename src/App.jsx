@@ -1,14 +1,14 @@
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
-import { AppTable } from './core/components/appTable/appTable'
+import { appRouter } from './core/components/routes/AppRouter'
 
 function App() {
   return (
     <>
-      <div className='flex justify-center items-center min-h-screen bg-[#1a1a1a]'>
-        <AppTable/>
 
-      </div>
-    </>
+        <RouterProvider router={appRouter} />
+        
+  </>
   )
 }
 

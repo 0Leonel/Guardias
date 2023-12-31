@@ -1,9 +1,5 @@
-import useReadFile  from './useReadFile';
+import { useExcel } from './useExcel';
 
-export const useData = () => {
-  
-    const {data} = useReadFile(import.meta.env.VITE_APP_INFORMACION);
-    return (
-    {data}
-    )
-}
+export const useData =  () => {
+   return useExcel(import.meta.env.VITE_APP_INFORMACION);
+  }
