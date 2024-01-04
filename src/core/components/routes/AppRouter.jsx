@@ -16,7 +16,7 @@ export const appRouter = createBrowserRouter ([
             },
             {
                 path: "diciembre",
-                element: <AppMes mes={12} anio={2023} hoja={0} setDia={[2 , 4, 9,]}/>
+                element: <AppMes mes={12} anio={2023} hoja={0} />
             },
             {
                 path: "enero",

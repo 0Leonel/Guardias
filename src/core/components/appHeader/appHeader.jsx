@@ -32,8 +32,6 @@ export const AppHeader = () => {
       </div>
 
       <div className="flex items-center gap-4">
-    
-
         <div className="block md:hidden">
           <button className="rounded bg-gray-100 p-2 text-white transition hover:text-gray-600/75" onClick={() => setIsOpen(!isOpen)}>
             <svg
@@ -53,12 +51,13 @@ export const AppHeader = () => {
   </div>
   {isOpen && (
   <div className="md:hidden">
-    <nav aria-label="Mobile">
+    <nav >
       <ul className="flex flex-col items-center mt-4 text-sm">
         {menu.map((item) => (
-          <li key={item.id}>
+          <li key={item.id}
+            className='w-full text-center'>
             <Link
-              className="text-white transition hover:text-gray-500/75 block py-2"
+              className="text-white transition hover:text-gray-500/75 block py-2  "
               to={item.link}
               onClick={() => setIsOpen(false)}
             >

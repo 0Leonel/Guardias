@@ -1,6 +1,3 @@
-import React from 'react'
-import { AppTable } from '../../core/components/appTable/appTable'
-import { AppCalendario } from '../../core/components/appCalendario/appCalendario'
 
 export const HomeView = () => {
   return (
