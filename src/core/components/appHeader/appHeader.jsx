@@ -8,6 +8,7 @@ export const AppHeader = () => {
         {id: 1, name: "Home", link: "/", },
         {id: 2, name: "Diciembre", link: "/diciembre",},
         {id: 3, name: "Enero", link: "/enero",},
+        {id: 4, name: "Febrero", link: "/febrero",},
     ]
   return (
     <header className="bg-[#548C8C]">

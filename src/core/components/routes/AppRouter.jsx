@@ -21,6 +21,10 @@ export const appRouter = createBrowserRouter ([
             {
                 path: "enero",
                 element: <AppMes mes={1} anio={2024} hoja={1}/>
+            },
+            {
+                path: "febrero",
+                element: <AppMes mes={2} anio={2024} hoja={2}/>,
             }
         ]
     },
