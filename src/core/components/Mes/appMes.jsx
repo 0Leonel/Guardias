@@ -24,9 +24,8 @@ export const AppMes = (props) => {
   };
   
   const handleDownloadExcel = (excelData) => {
-    // Filter the columns to exclude 'id'
     const filteredData = excelData.map(({ id, ...rest }) => rest);
-  
+
     const sheetName = 'Hoja';
     const ws = XLSX.utils.json_to_sheet(filteredData);
     const wb = XLSX.utils.book_new();
