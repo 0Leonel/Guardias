@@ -15,15 +15,15 @@ export const appRouter = createBrowserRouter ([
                 element: <HomeView/>
             },
             {
-                path: "diciembre",
+                path: "diciembre23",
                 element: <AppMes mes={12} anio={2023} hoja={0} />
             },
             {
-                path: "enero",
+                path: "enero24",
                 element: <AppMes mes={1} anio={2024} hoja={1}/>
             },
             {
-                path: "febrero",
+                path: "febrero24",
                 element: <AppMes mes={2} anio={2024} hoja={2}/>,
             }
         ]
